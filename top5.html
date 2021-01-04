@@ -1,0 +1,31 @@
+<!doctype HTML>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<meta charset="utf-8">
+		<div class="topnav">
+			<a href="/covid_database/index.php">Home</a>
+			<a href="/covid_database/top5.html">Meiste Infizierte</a>
+			<a href="/covid_database/bottom5.html">Wenigste Infizierte</a>
+			<a href="/covid_database/singleCountry.php">Einzelnes Land</a>
+			<a href="/covid_database/linegraph.html">Gesamte Fälle</a>
+		</div>
+		<title>Gesamtansicht</title>
+		<style>
+			.chart-container {
+				width: 700px;
+				height: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="chart-container">
+			<canvas id="top5"></canvas>
+		</div>
+		
+		<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+		<script type="text/javascript" src="js/Chart.min.js"></script>
+		<script type="text/javascript" src="js/top5.js"></script>
+	</body>
+</html>
